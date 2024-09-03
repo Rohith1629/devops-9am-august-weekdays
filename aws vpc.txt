@@ -1,0 +1,49 @@
+
+vpc -virtvual private cloude,
+
+cloude type
+1.private cloude
+2.public cloude
+3.hybrid cloude
+
+two type of vpc
+1-default vpc   =vpc were create provision to root account.
+2-custome vpc   =vpc create by customer as per private custome, we can custome our infrastructer
+
+compontent avaible in vpc
+
+1.vpc
+2.subnet {rate}(private,public,hybride)
+     subnet -sub means devided big network into small network
+     subnet mask  = hide the number bit in host and network portion in cide block
+	 cide -class interdomine network
+	 
+	 route table (public,private cloude)
+	 internet gateway=
+	 
+amazon provides ip address	 range is privete ip
+    10.0.0.0 -10.255.255.255(10/8 prefix)          class a
+	172.16.0.0. *172.31.255.255(172.16?12 prefix)  class b
+	192.168.0.0-192.168.255.255(192.168/16 prefix) class c
+	
+10,0,0,0   network address
+10.0.0.255 broadcast address
+
+internet gateway only for ipv4
+egress-only gateway only for ipv
+
+DHCP -dynamic host configuration protocol
+assign ip address to servers with in vpc automatcally
+
+this will work with pricipal called "DORA"
+D =discover
+O =offer
+R =request
+A =acknowledgement
+
+security group =instance(servers)
+
+internet gateway for public
+nat gateway for private
+
+
