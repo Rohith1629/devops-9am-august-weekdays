@@ -1,0 +1,3 @@
+for praticing git
+this is sample file to so work
+for the devops pratice
