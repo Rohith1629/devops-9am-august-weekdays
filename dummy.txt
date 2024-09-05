@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 hello world
 get input
+=======
+hi indian
+>>>>>>> 2dfbb8579309e686a755fea9a47442aee0680fac
