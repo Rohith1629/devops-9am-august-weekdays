@@ -1,0 +1,14 @@
+node
+{
+    stage "1. working on scripted pipeline" {
+        sh echo "scripted pipeline in qa branch"
+        sh "ls"
+        sh "date"
+    }
+
+    stage "2. vewing users" {
+       sh cat /etc/passwd
+       sh whoami
+    }
+    
+}
