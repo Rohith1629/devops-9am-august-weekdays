@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+    stages {
+        stage ("1. update the system"){
+            steps {
+                sh "mkdir -p test"
+                sh "touch test-1.txt"
+            }
+        }
+
+        stage ("2. print memory and disk"){
+            steps{
+                sh "ls"
+                sh "ls -a"
+                sh "lsblk"
+                sh "free -m"
+                sh "touch test-2.txt"
+                sh "df -h"
+                sh "du -ksh"
+                sh "touch iostat.txt"
+            }
+        }
+        
+        stage ("3. print the current date and logged in user"){
+            steps{
+                sh "date"
+                sh "cal 2025"
+                sh "whoami"
+            }
+        }
+
+        stage ("4. uptime of the system"){
+            steps{
+                sh "uptime"
+                sh "iostat"
+            }
+        }
+
+        stage ("5. view the list of images and containers"){
+            steps{
+                sh "docker -v"
+                sh "docker images"
+                sh "docker ps"
+                sh "docker ps -a"
+            }
+        }
+    } 
+}
