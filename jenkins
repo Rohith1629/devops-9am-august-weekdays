@@ -1,10 +1,7 @@
-pipeline {
-    agent any
-    stages {
-        stage ("1. update the syste"){
-            steps {
-                sh "mkdir -p test"
-                sh "touch test.txt"
-            }
-        }
+node {
+    stage("1. build stage") {
+        sh 'echo "build stage"'
+        sh 'echo "building the first stage on = $(date)"'
+        sh 'mkdir -p inbound'
+    }
 }
