@@ -1,1 +1,10 @@
-this is jenkins
+pipeline {
+    agent any
+    stages {
+        stage ("1. update the syste"){
+            steps {
+                sh "mkdir -p test"
+                sh "touch test.txt"
+            }
+        }
+}
